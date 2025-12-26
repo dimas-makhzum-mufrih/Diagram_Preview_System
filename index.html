@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +32,7 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .subtitle {
@@ -45,7 +44,7 @@
             background: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             margin-bottom: 20px;
         }
 
@@ -68,8 +67,7 @@
             font-size: 0.9em;
         }
 
-        select,
-        button {
+        select, button {
             padding: 12px;
             border-radius: 8px;
             border: 2px solid #e0e0e0;
@@ -113,7 +111,7 @@
         .viewer-container {
             background: white;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             overflow: hidden;
         }
 
@@ -139,7 +137,7 @@
         }
 
         .zoom-btn {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255,255,255,0.2);
             border: 2px solid white;
             color: white;
             width: 40px;
@@ -154,7 +152,7 @@
         }
 
         .zoom-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255,255,255,0.3);
             transform: scale(1.1);
         }
 
@@ -178,7 +176,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             display: block;
         }
 
@@ -284,20 +282,15 @@
             body {
                 background: white;
             }
-
-            .controls,
-            .navigation,
-            header {
+            .controls, .navigation, header {
                 display: none;
             }
-
             .viewer-container {
                 box-shadow: none;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -335,9 +328,9 @@
             </div>
 
             <div class="action-buttons">
-                <button onclick="printDiagram()">Print</button>
+                <button onclick="printDiagram()">🖨️ Print</button>
                 <button onclick="toggleFullscreen()" class="fullscreen-btn">⛶ Fullscreen</button>
-                <button onclick="presentationMode()">Presentation Mode</button>
+                <button onclick="presentationMode()">🎬 Presentation Mode</button>
             </div>
         </div>
 
@@ -354,60 +347,43 @@
             <div class="diagram-viewer" id="diagramViewer">
                 <div class="diagram-content" id="diagramContent">
                     <!-- Slide 1 -->
-                    <div class="diagram-slide active" data-title="Main Flowchart - System Overview"
-                        data-type="Flowchart" data-desc="Gambaran umum alur sistem project management"
-                        data-components="Authentication, Dashboard, Task Management">
-                        <img src="Basis Data Bu Umi/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-21-020602.png" alt="Main Flowchart">
+                    <div class="diagram-slide active" data-title="Main Flowchart - System Overview" data-type="Flowchart" data-desc="Gambaran umum alur sistem project management" data-components="Authentication, Dashboard, Task Management">
+                        <img src="PASTE_IMAGE_1_HERE" alt="Main Flowchart">
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="diagram-slide" data-title="Sequence Diagram - Task Creation"
-                        data-type="Sequence Diagram"
-                        data-desc="Alur interaksi pembuatan task antara Leader, Web Interface, Backend, dan Database"
-                        data-components="Leader, Web Interface, Backend PHP, MySQL">
-                        <img src="sequenceDiagram.png" alt="Sequence Diagram">
+                    <div class="diagram-slide" data-title="Sequence Diagram - Task Creation" data-type="Sequence Diagram" data-desc="Alur interaksi pembuatan task antara Leader, Web Interface, Backend, dan Database" data-components="Leader, Web Interface, Backend PHP, MySQL">
+                        <img src="PASTE_IMAGE_2_HERE" alt="Sequence Diagram">
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="diagram-slide" data-title="Activity Diagram - User Flow" data-type="Activity Diagram"
-                        data-desc="Alur aktivitas user dalam sistem termasuk login, dashboard, dan diskusi"
-                        data-components="Login, Dashboard, ViewTasks, Discussion">
-                        <img src="ACTIVITY DIAGRAM.png" alt="Activity Diagram">
+                    <div class="diagram-slide" data-title="Activity Diagram - User Flow" data-type="Activity Diagram" data-desc="Alur aktivitas user dalam sistem termasuk login, dashboard, dan diskusi" data-components="Login, Dashboard, ViewTasks, Discussion">
+                        <img src="PASTE_IMAGE_3_HERE" alt="Activity Diagram">
                     </div>
 
                     <!-- Slide 4 -->
-                    <div class="diagram-slide" data-title="Problem & Solution Analysis" data-type="Analysis Diagram"
-                        data-desc="Analisis masalah komunikasi, manajemen, tools, dan visibilitas beserta solusinya"
-                        data-components="Chat Integration, Kanban Board, Analytics, Notifications">
-                        <img src="FISHBONE DIAGRAM (Cause & Effect).png" alt="Problem Analysis">
+                    <div class="diagram-slide" data-title="Problem & Solution Analysis" data-type="Analysis Diagram" data-desc="Analisis masalah komunikasi, manajemen, tools, dan visibilitas beserta solusinya" data-components="Chat Integration, Kanban Board, Analytics, Notifications">
+                        <img src="PASTE_IMAGE_4_HERE" alt="Problem Analysis">
                     </div>
 
                     <!-- Slide 5 -->
-                    <div class="diagram-slide" data-title="Module Hierarchy" data-type="Hierarchy Diagram"
-                        data-desc="Struktur hierarki modul sistem dari Level 0 hingga Level 2"
-                        data-components="Authentication, Dashboard, Project Management, Task Management, Discussion, Notifications, Analytics">
-                        <img src="HIPO DIAGRAM (Hierarchy Input Process Output).png" alt="Module Hierarchy">
+                    <div class="diagram-slide" data-title="Module Hierarchy" data-type="Hierarchy Diagram" data-desc="Struktur hierarki modul sistem dari Level 0 hingga Level 2" data-components="Authentication, Dashboard, Project Management, Task Management, Discussion, Notifications, Analytics">
+                        <img src="PASTE_IMAGE_5_HERE" alt="Module Hierarchy">
                     </div>
 
                     <!-- Slide 6 -->
-                    <div class="diagram-slide" data-title="Detailed Flowchart" data-type="Detailed Flowchart"
-                        data-desc="Flowchart detail dengan proses authentication dan task management"
-                        data-components="Login Flow, Task Assignment, Status Updates">
-                        <img src="Mermaid Chart - Create complex, visual diagrams with text.-2025-11-18-045234.png" alt="Detailed Flowchart">
+                    <div class="diagram-slide" data-title="Detailed Flowchart" data-type="Detailed Flowchart" data-desc="Flowchart detail dengan proses authentication dan task management" data-components="Login Flow, Task Assignment, Status Updates">
+                        <img src="PASTE_IMAGE_6_HERE" alt="Detailed Flowchart">
                     </div>
 
                     <!-- Slide 7 -->
-                    <div class="diagram-slide" data-title="User Role Features" data-type="Feature Diagram"
-                        data-desc="Fitur-fitur yang tersedia untuk setiap role: Developer, Member, dan Leader"
-                        data-components="Developer Features, Member Features, Leader Features, Shared Features">
-                        <img src="USE CASE DIAGRAM.png" alt="User Roles">
+                    <div class="diagram-slide" data-title="User Role Features" data-type="Feature Diagram" data-desc="Fitur-fitur yang tersedia untuk setiap role: Developer, Member, dan Leader" data-components="Developer Features, Member Features, Leader Features, Shared Features">
+                        <img src="PASTE_IMAGE_7_HERE" alt="User Roles">
                     </div>
 
                     <!-- Slide 8 -->
-                    <div class="diagram-slide" data-title="Database ERD Schema" data-type="ERD"
-                        data-desc="Skema database dengan relasi antar tabel"
-                        data-components="Users, Projects, Tasks, Sub_roles, Notifications, Feedback, Discussions">
-                        <img src="ERD (Entity Relationship Diagram).png" alt="Database ERD">
+                    <div class="diagram-slide" data-title="Database ERD Schema" data-type="ERD" data-desc="Skema database dengan relasi antar tabel" data-components="Users, Projects, Tasks, Sub_roles, Notifications, Feedback, Discussions">
+                        <img src="PASTE_IMAGE_8_HERE" alt="Database ERD">
                     </div>
                 </div>
             </div>
@@ -444,27 +420,27 @@
 
         function loadDiagram(index) {
             currentIndex = index;
-
+            
             // Hide all slides
             slides.forEach(slide => slide.classList.remove('active'));
-
+            
             // Show current slide
             const currentSlide = slides[index];
             currentSlide.classList.add('active');
-
+            
             // Update info
             document.getElementById('diagramTitle').textContent = currentSlide.dataset.title;
             document.getElementById('infoType').textContent = currentSlide.dataset.type;
             document.getElementById('infoDesc').textContent = currentSlide.dataset.desc;
             document.getElementById('infoComponents').textContent = currentSlide.dataset.components;
-
+            
             // Update buttons
             document.getElementById('prevBtn').disabled = index === 0;
             document.getElementById('nextBtn').disabled = index === totalSlides - 1;
-
+            
             // Update select
             document.getElementById('diagramSelect').value = index;
-
+            
             // Reset zoom
             resetZoom();
         }
@@ -546,5 +522,4 @@
         loadDiagram(0);
     </script>
 </body>
-
 </html>
